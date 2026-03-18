@@ -1,0 +1,351 @@
+@charset "UTF-8";
+
+/* 通用样式 */
+body {
+    font-family: 'Noto Serif SC', serif; /* 中式字体 */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif SC', serif;
+    color: #A00000; /* 深红色作为标题颜色 */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 按钮样式 */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn.primary-btn {
+    background-color: #A00000; /* 主色调红 */
+    color: #FFD700; /* 金色文字 */
+    border: 2px solid #A00000;
+}
+
+.btn.primary-btn:hover {
+    background-color: #FFD700; /* 金色背景 */
+    color: #A00000; /* 红色文字 */
+    border-color: #FFD700;
+}
+
+.btn.secondary-btn {
+    background-color: #333; /* 黑色背景 */
+    color: #FFD700; /* 金色文字 */
+    border: 2px solid #333;
+}
+
+.btn.secondary-btn:hover {
+    background-color: #FFD700; /* 金色背景 */
+    color: #333; /* 黑色文字 */
+    border-color: #FFD700;
+}
+
+/* 头部导航 */
+header {
+    background-color: #000; /* 黑色背景 */
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    color: #FFD700; /* 金色Logo */
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    color: #fff; /* 白色文字 */
+    font-weight: bold;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #FFD700; /* 金色下划线 */
+    transition: width 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FFD700; /* 悬停金色 */
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+#hero {
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover; /* 背景图片 */
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色蒙版 */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+#hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: #FFD700; /* 金色Slogan */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    color: #eee;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.hero-buttons .btn {
+    margin: 0 15px;
+}
+
+/* 推荐菜品 */
+#recommended-dishes h2 {
+    color: #A00000;
+}
+
+.dish-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.dish-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dish-item:hover {
+    transform: translateY(-10px) scale(1.03); /* hover放大 */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.dish-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.dish-item h3 {
+    margin-top: 20px;
+    color: #A00000;
+    font-size: 1.5em;
+}
+
+.dish-item p {
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 店铺亮点 */
+#store-highlights h2 {
+    color: #A00000;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.highlight-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.highlight-item h3 {
+    color: #A00000;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.highlight-item p {
+    color: #555;
+}
+
+/* 快速导航 */
+#quick-navigation h2 {
+    color: #A00000;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* 底部 */
+footer {
+    background-color: #000; /* 黑色背景 */
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+    }
+
+    header nav ul li {
+        margin: 0 15px;
+    }
+
+    #hero h1 {
+        font-size: 3em;
+    }
+
+    #hero p {
+        font-size: 1.2em;
+    }
+
+    .hero-buttons .btn {
+        margin: 10px 0;
+        width: 80%;
+    }
+
+    .navigation-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation-buttons .btn {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero h1 {
+        font-size: 2.5em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    .dish-grid, .highlight-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-padding {
+        padding: 50px 0;
+    }
+}
