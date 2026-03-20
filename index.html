@@ -3,13 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>火锅店宣传网站 - 首页</title>
+
+    <!-- SEO & GEO Meta -->
+    <title>火锅天堂 | 正宗麻辣火锅 · 新鲜食材 · 在线预订</title>
+    <meta name="description" content="火锅天堂是一家提供正宗麻辣火锅的餐厅，每日新鲜食材，地道川渝风味。提供堂食、在线预订服务，欢迎光临。">
+    <meta name="keywords" content="火锅,麻辣火锅,重庆火锅,川味火锅,火锅天堂,火锅预订,火锅餐厅">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.huoguotiantang.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="restaurant">
+    <meta property="og:title" content="火锅天堂 | 正宗麻辣火锅">
+    <meta property="og:description" content="每日新鲜食材，地道川渝风味，环境优雅，性价比高。立即预订，享受火锅盛宴。">
+    <meta property="og:image" content="images/hero-bg.jpg">
+    <meta property="og:url" content="https://www.huoguotiantang.com/">
+    <meta property="og:locale" content="zh_CN">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="火锅天堂 | 正宗麻辣火锅">
+    <meta name="twitter:description" content="每日新鲜食材，地道川渝风味，环境优雅，性价比高。">
+    <meta name="twitter:image" content="images/hero-bg.jpg">
+
+    <!-- Schema.org JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "火锅天堂",
+      "description": "火锅天堂是一家提供正宗麻辣火锅的餐厅，每日新鲜食材，地道川渝风味，环境优雅，性价比高。",
+      "url": "https://www.huoguotiantang.com/",
+      "image": "https://www.huoguotiantang.com/images/hero-bg.jpg",
+      "telephone": "+86-400-888-8888",
+      "priceRange": "¥¥",
+      "servesCuisine": ["川菜", "火锅", "麻辣火锅"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "美食街88号",
+        "addressLocality": "成都市",
+        "addressRegion": "四川省",
+        "postalCode": "610000",
+        "addressCountry": "CN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "30.5728",
+        "longitude": "104.0668"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "11:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday","Sunday"],
+          "opens": "10:00",
+          "closes": "23:00"
+        }
+      ],
+      "menu": "https://www.huoguotiantang.com/menu.html",
+      "acceptsReservations": "True",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "320"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "张小明"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+          "reviewBody": "锅底非常香，麻辣程度刚刚好，食材新鲜，下次还会来！"
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "李雨欣"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+          "reviewBody": "环境很好，服务周到，精品肥牛入口即化，强烈推荐！"
+        },
+        {
+          "@type": "Review",
+          "author": {"@type": "Person", "name": "王大伟"},
+          "reviewRating": {"@type": "Rating", "ratingValue": "4"},
+          "reviewBody": "性价比超高，朋友聚餐的首选，每次来都吃得很满足。"
+        }
+      ]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "火锅天堂的营业时间是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "工作日营业时间为11:00至22:00，周末及节假日为10:00至23:00。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "火锅天堂支持在线预订吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "支持，您可以通过本网站在线预订座位，也可以拨打电话 400-888-8888 进行预订。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "火锅天堂的锅底有哪些选择？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "我们提供麻辣锅底、清汤锅底、番茄锅底和菌菇锅底，满足不同口味需求。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "火锅天堂的人均消费是多少？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "人均消费约80至150元，提供多种套餐选择，性价比高。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "火锅天堂在哪里？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "我们位于四川省成都市美食街88号，交通便利，欢迎光临。"
+          }
+        }
+      ]
+    }
+    </script>
+
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
+        <nav aria-label="主导航">
             <div class="logo">火锅天堂</div>
             <ul>
                 <li><a href="index.html">首页</a></li>
@@ -22,10 +162,10 @@
     </header>
 
     <main>
-        <section id="hero" class="hero-section">
+        <section id="hero" class="hero-section" aria-label="欢迎横幅">
             <div class="hero-content">
                 <h1>品味麻辣，享受生活</h1>
-                <p>最新鲜的食材，最地道的风味，尽在火锅天堂</p>
+                <p>最新鲜的食材，最地道的川渝风味，尽在火锅天堂</p>
                 <div class="hero-buttons">
                     <a href="menu.html" class="btn primary-btn">查看菜单</a>
                     <a href="contact.html" class="btn secondary-btn">立即预订</a>
@@ -33,23 +173,34 @@
             </div>
         </section>
 
+        <!-- 品牌介绍：为 AI 提供足够的语义上下文 -->
+        <section id="about-intro" class="section-padding bg-light">
+            <div class="container">
+                <h2>关于火锅天堂</h2>
+                <p class="intro-text">火锅天堂创立于2010年，是一家专注于正宗川渝麻辣火锅的连锁餐厅。我们坚持每日从产地直采新鲜食材，锅底配方源自重庆老师傅的祖传秘方，历经十余年打磨，深受广大食客喜爱。无论是家庭聚餐、朋友小聚还是商务宴请，火锅天堂都能为您提供舒适优雅的用餐环境和热情周到的服务。</p>
+            </div>
+        </section>
+
         <section id="recommended-dishes" class="section-padding">
             <h2>推荐菜品</h2>
             <div class="dish-grid">
                 <div class="dish-item">
-                    <img src="images/mala-hotpot.jpg" alt="麻辣锅底">
+                    <img src="images/mala-hotpot.jpg" alt="麻辣锅底 - 火锅天堂招牌锅底">
                     <h3>麻辣锅底</h3>
-                    <p>¥ 68</p>
+                    <p class="dish-desc">采用30余种天然香料熬制，麻而不燥，辣而鲜香</p>
+                    <p class="dish-price">¥ 68</p>
                 </div>
                 <div class="dish-item">
-                    <img src="images/premium-beef.jpg" alt="精品肥牛">
+                    <img src="images/premium-beef.jpg" alt="精品肥牛 - 每日新鲜直供">
                     <h3>精品肥牛</h3>
-                    <p>¥ 88</p>
+                    <p class="dish-desc">精选优质肥牛，纹理细腻，入口即化，鲜嫩多汁</p>
+                    <p class="dish-price">¥ 88</p>
                 </div>
                 <div class="dish-item">
-                    <img src="images/fresh-vegetables.jpg" alt="新鲜时蔬拼盘">
+                    <img src="images/fresh-vegetables.jpg" alt="新鲜时蔬拼盘 - 当日采购">
                     <h3>新鲜时蔬拼盘</h3>
-                    <p>¥ 48</p>
+                    <p class="dish-desc">当日新鲜采购，多种时令蔬菜搭配，清爽解腻</p>
+                    <p class="dish-price">¥ 48</p>
                 </div>
             </div>
         </section>
@@ -58,21 +209,105 @@
             <h2>店铺亮点</h2>
             <div class="highlight-grid">
                 <div class="highlight-item">
+                    <div class="highlight-icon">🥬</div>
                     <h3>食材新鲜</h3>
-                    <p>每日新鲜采购，从农场到餐桌，保证食材的天然与美味。</p>
+                    <p>每日新鲜采购，与多家优质农场直接合作，从农场到餐桌全程冷链配送，保证食材的天然与美味。</p>
                 </div>
                 <div class="highlight-item">
+                    <div class="highlight-icon">🏮</div>
                     <h3>环境优雅</h3>
-                    <p>中式古典与现代简约完美融合，为您打造舒适惬意的用餐体验。</p>
+                    <p>中式古典与现代简约完美融合，设有包厢及大厅，可容纳200余人同时用餐，为您打造舒适惬意的用餐体验。</p>
                 </div>
                 <div class="highlight-item">
+                    <div class="highlight-icon">💰</div>
                     <h3>性价比高</h3>
-                    <p>优质服务，美味菜品，实惠价格，让您尽享火锅盛宴。</p>
+                    <p>人均消费80至150元，提供多种套餐及优惠活动，优质服务与美味菜品兼得，让您尽享火锅盛宴。</p>
                 </div>
             </div>
         </section>
 
-        <section id="quick-navigation" class="section-padding">
+        <section id="customer-reviews" class="section-padding">
+            <h2>顾客评价</h2>
+            <p class="section-subtitle">超过320位顾客给出4.8分的高度评价</p>
+            <div class="review-grid">
+                <div class="review-item" itemscope itemtype="https://schema.org/Review">
+                    <div class="review-stars" aria-label="5星评价">★★★★★</div>
+                    <p itemprop="reviewBody">"锅底非常香，麻辣程度刚刚好，食材新鲜，下次还会来！"</p>
+                    <span class="reviewer" itemprop="author">— 张小明</span>
+                </div>
+                <div class="review-item" itemscope itemtype="https://schema.org/Review">
+                    <div class="review-stars" aria-label="5星评价">★★★★★</div>
+                    <p itemprop="reviewBody">"环境很好，服务周到，精品肥牛入口即化，强烈推荐！"</p>
+                    <span class="reviewer" itemprop="author">— 李雨欣</span>
+                </div>
+                <div class="review-item" itemscope itemtype="https://schema.org/Review">
+                    <div class="review-stars" aria-label="4星评价">★★★★☆</div>
+                    <p itemprop="reviewBody">"性价比超高，朋友聚餐的首选，每次来都吃得很满足。"</p>
+                    <span class="reviewer" itemprop="author">— 王大伟</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ 区块：GEO 核心内容 -->
+        <section id="faq" class="section-padding bg-light">
+            <h2>常见问题</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>火锅天堂的营业时间是什么？</h3>
+                    <p>工作日营业时间为 <strong>11:00 至 22:00</strong>，周末及节假日为 <strong>10:00 至 23:00</strong>，全年无休。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>支持在线预订吗？</h3>
+                    <p>支持。您可以通过本网站<a href="contact.html#reservation">在线预订</a>座位，也可拨打 <strong>400-888-8888</strong> 电话预订，建议节假日提前1至2天预约。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>锅底有哪些口味可以选择？</h3>
+                    <p>我们提供<strong>麻辣锅底、清汤锅底、番茄锅底、菌菇锅底</strong>四种选择，也可选择鸳鸯锅，满足不同口味需求。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>人均消费大概是多少？</h3>
+                    <p>人均消费约 <strong>80 至 150 元</strong>，提供多种套餐选择，性价比高，欢迎多人聚餐享受团体优惠。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>餐厅在哪里？怎么到达？</h3>
+                    <p>我们位于<strong>四川省成都市美食街88号</strong>，地铁2号线美食街站A出口步行5分钟即可到达，周边有停车场。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 本地信息区块 -->
+        <section id="store-info" class="section-padding">
+            <h2>门店信息</h2>
+            <div class="info-grid" itemscope itemtype="https://schema.org/Restaurant">
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <h3>地址</h3>
+                    <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                        <span itemprop="addressRegion">四川省</span>
+                        <span itemprop="addressLocality">成都市</span>
+                        <span itemprop="streetAddress">美食街88号</span>
+                    </p>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">🕐</div>
+                    <h3>营业时间</h3>
+                    <p>周一至周五：11:00 - 22:00</p>
+                    <p>周六至周日：10:00 - 23:00</p>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <h3>联系电话</h3>
+                    <p itemprop="telephone"><a href="tel:+864008888888">400-888-8888</a></p>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">💬</div>
+                    <h3>微信公众号</h3>
+                    <p>搜索"火锅天堂官方"关注我们，获取最新优惠资讯</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="quick-navigation" class="section-padding bg-light">
             <h2>快速导航</h2>
             <div class="navigation-buttons">
                 <a href="contact.html#reservation" class="btn primary-btn">在线订位</a>
@@ -82,8 +317,13 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 火锅天堂. 保留所有权利。</p>
+    <footer itemscope itemtype="https://schema.org/Restaurant">
+        <div class="footer-content">
+            <p itemprop="name"><strong>火锅天堂</strong></p>
+            <p>地址：<span itemprop="address">四川省成都市美食街88号</span> | 电话：<a href="tel:+864008888888" itemprop="telephone">400-888-8888</a></p>
+            <p>营业时间：工作日 11:00-22:00 | 周末 10:00-23:00</p>
+            <p>&copy; 2026 火锅天堂. 保留所有权利。</p>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>

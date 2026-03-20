@@ -273,6 +273,52 @@ header nav ul li a:hover::after {
     color: #555;
 }
 
+/* 顾客评价 */
+#customer-reviews h2 {
+    color: #A00000;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.review-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.review-stars {
+    color: #FFD700;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.review-item p {
+    color: #555;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.reviewer {
+    color: #A00000;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
 /* 快速导航 */
 #quick-navigation h2 {
     color: #A00000;
@@ -347,5 +393,157 @@ footer {
 
     .section-padding {
         padding: 50px 0;
+    }
+}
+
+/* 品牌介绍 */
+#about-intro .intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.9;
+}
+
+/* 菜品描述 */
+.dish-desc {
+    color: #777;
+    font-size: 0.9em;
+    padding: 0 15px;
+    margin-bottom: 5px;
+}
+
+.dish-price {
+    color: #A00000;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 亮点图标 */
+.highlight-icon {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+/* 评价副标题 */
+.section-subtitle {
+    text-align: center;
+    color: #777;
+    margin-top: -30px;
+    margin-bottom: 40px;
+    font-size: 0.95em;
+}
+
+/* FAQ 区块 */
+#faq h2 {
+    color: #A00000;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faq-item {
+    background-color: #fff;
+    border-left: 4px solid #A00000;
+    border-radius: 0 8px 8px 0;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.faq-item h3 {
+    text-align: left;
+    color: #A00000;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    color: #555;
+    margin: 0;
+}
+
+.faq-item a {
+    color: #A00000;
+    text-decoration: underline;
+}
+
+/* 门店信息 */
+#store-info h2 {
+    color: #A00000;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.info-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.info-icon {
+    font-size: 2.5em;
+    margin-bottom: 12px;
+}
+
+.info-item h3 {
+    color: #A00000;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    color: #555;
+    margin: 4px 0;
+}
+
+.info-item a {
+    color: #A00000;
+}
+
+/* Footer 增强 */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 6px 0;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #FFD700;
+}
+
+/* 响应式补充 */
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .faq-item h3 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .info-grid {
+        grid-template-columns: 1fr;
     }
 }
