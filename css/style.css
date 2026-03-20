@@ -547,3 +547,287 @@ footer a {
         grid-template-columns: 1fr;
     }
 }
+
+/* 限时优惠横幅 */
+.promo-banner {
+    background-color: #A00000;
+    color: #FFD700;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.95em;
+}
+
+.promo-banner a {
+    color: #fff;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+/* 悬浮预订按钮 */
+.float-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #A00000;
+    color: #FFD700;
+    padding: 15px 22px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1em;
+    box-shadow: 0 4px 15px rgba(160,0,0,0.4);
+    z-index: 9999;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.float-btn:hover {
+    background-color: #FFD700;
+    color: #A00000;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(160,0,0,0.5);
+}
+
+/* 一键导航 / 一键拨号按钮 */
+.map-btn, .call-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 20px;
+    font-size: 0.9em;
+}
+
+/* 社交证明 */
+#social-proof h2 {
+    color: #A00000;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.social-item:hover {
+    transform: translateY(-4px);
+}
+
+.social-placeholder {
+    font-size: 3em;
+    margin-bottom: 12px;
+    background-color: #f8f0f0;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.social-item p {
+    color: #555;
+    font-style: italic;
+    font-size: 0.95em;
+    margin-bottom: 8px;
+}
+
+.social-item span {
+    color: #A00000;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+.social-tip {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+    font-size: 0.95em;
+}
+
+@media (max-width: 480px) {
+    .float-btn {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 18px;
+        font-size: 0.9em;
+    }
+}
+
+/* 页面 Hero（内页用） */
+.page-hero {
+    background-color: #A00000;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.page-hero h1 {
+    color: #FFD700;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.page-hero p {
+    color: #eee;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+/* 菜单页 */
+.menu-section h2 {
+    color: #A00000;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+.menu-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.menu-item-info h3 {
+    text-align: left;
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 6px;
+}
+
+.menu-item-info p {
+    color: #777;
+    font-size: 0.9em;
+    margin: 0 0 8px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #A00000;
+    color: #FFD700;
+    font-size: 0.75em;
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+
+.menu-price {
+    color: #A00000;
+    font-weight: bold;
+    font-size: 1.2em;
+    white-space: nowrap;
+    min-width: 60px;
+    text-align: right;
+}
+
+/* 优惠活动页 */
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.promo-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 35px 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-5px);
+}
+
+.promo-card.hot {
+    border: 2px solid #A00000;
+}
+
+.promo-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #A00000;
+    color: #FFD700;
+    padding: 4px 16px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+}
+
+.promo-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.promo-card h3 {
+    color: #A00000;
+    font-size: 1.3em;
+    margin-bottom: 12px;
+}
+
+.promo-card p {
+    color: #555;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+}
+
+.promo-expire {
+    display: block;
+    color: #999;
+    font-size: 0.82em;
+    margin-bottom: 20px;
+}
+
+/* 微信二维码 */
+.wechat-box {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.wechat-qr {
+    font-size: 5em;
+    margin-bottom: 10px;
+}
+
+.wechat-box p {
+    color: #333;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        flex-direction: row;
+    }
+
+    .promo-grid {
+        grid-template-columns: 1fr;
+    }
+}

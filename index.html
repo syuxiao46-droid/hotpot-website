@@ -149,6 +149,11 @@
 </head>
 <body>
     <header>
+        <!-- 限时优惠横幅 -->
+        <div class="promo-banner">
+            🎉 新客专享：首次到店消费立减 <strong>30元</strong>，出示本页面即可享受 &nbsp;|&nbsp;
+            <a href="promotions.html">查看更多优惠 →</a>
+        </div>
         <nav aria-label="主导航">
             <div class="logo">火锅天堂</div>
             <ul>
@@ -248,8 +253,36 @@
             </div>
         </section>
 
-        <!-- FAQ 区块：GEO 核心内容 -->
-        <section id="faq" class="section-padding bg-light">
+        <!-- 社交证明 -->
+        <section id="social-proof" class="section-padding bg-light">
+            <h2>食客打卡</h2>
+            <p class="section-subtitle">来自小红书 · 大众点评的真实分享</p>
+            <div class="social-grid">
+                <div class="social-item">
+                    <div class="social-placeholder">📸</div>
+                    <p>"锅底真的绝了，辣得过瘾！"</p>
+                    <span>@美食探店小红书</span>
+                </div>
+                <div class="social-item">
+                    <div class="social-placeholder">📸</div>
+                    <p>"环境超好，适合朋友聚餐！"</p>
+                    <span>@吃货日记</span>
+                </div>
+                <div class="social-item">
+                    <div class="social-placeholder">📸</div>
+                    <p>"肥牛太嫩了，蘸料也很香！"</p>
+                    <span>@成都美食地图</span>
+                </div>
+                <div class="social-item">
+                    <div class="social-placeholder">📸</div>
+                    <p>"性价比超高，下次还来！"</p>
+                    <span>@周末觅食记</span>
+                </div>
+            </div>
+            <p class="social-tip">📱 在小红书搜索 <strong>#火锅天堂</strong> 查看更多打卡</p>
+        </section>
+
+        <!-- FAQ 区块：GEO 核心内容 -->        <section id="faq" class="section-padding bg-light">
             <h2>常见问题</h2>
             <div class="faq-list">
                 <div class="faq-item">
@@ -287,6 +320,7 @@
                         <span itemprop="addressLocality">成都市</span>
                         <span itemprop="streetAddress">美食街88号</span>
                     </p>
+                    <a href="https://maps.google.com/?q=成都市美食街88号" target="_blank" rel="noopener" class="btn primary-btn map-btn">一键导航</a>
                 </div>
                 <div class="info-item">
                     <div class="info-icon">🕐</div>
@@ -297,7 +331,7 @@
                 <div class="info-item">
                     <div class="info-icon">📞</div>
                     <h3>联系电话</h3>
-                    <p itemprop="telephone"><a href="tel:+864008888888">400-888-8888</a></p>
+                    <p itemprop="telephone"><a href="tel:+864008888888" class="btn primary-btn call-btn">📞 一键拨号</a></p>
                 </div>
                 <div class="info-item">
                     <div class="info-icon">💬</div>
@@ -325,6 +359,11 @@
             <p>&copy; 2026 火锅天堂. 保留所有权利。</p>
         </div>
     </footer>
+
+    <!-- 悬浮预订按钮 -->
+    <a href="contact.html#reservation" class="float-btn" aria-label="立即预订">
+        🍲 立即预订
+    </a>
 
     <script src="js/script.js"></script>
 </body>
