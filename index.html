@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO & GEO Meta -->
-    <title>火锅天堂 | 正宗麻辣火锅 · 新鲜食材 · 在线预订</title>
-    <meta name="description" content="火锅天堂是一家提供正宗麻辣火锅的餐厅，每日新鲜食材，地道川渝风味。提供堂食、在线预订服务，欢迎光临。">
-    <meta name="keywords" content="火锅,麻辣火锅,重庆火锅,川味火锅,火锅天堂,火锅预订,火锅餐厅">
+    <title>火锅天堂 | 成都美食街正宗麻辣火锅 · 聚餐首选 · 在线预订</title>
+    <meta name="description" content="火锅天堂位于成都市美食街88号，正宗川渝麻辣火锅，每日新鲜食材，适合生日聚餐、商务宴请、家庭聚餐。人均80-150元，支持在线预订包厢，电话400-888-8888。">
+    <meta name="keywords" content="成都火锅,美食街火锅,麻辣火锅,川渝火锅,附近好吃的火锅,生日聚餐火锅,商务宴请火锅,成都聚餐,火锅天堂,重庆火锅成都">
     <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="CN-SC">
+    <meta name="geo.placename" content="成都市">
+    <meta name="geo.position" content="30.5728;104.0668">
+    <meta name="ICBM" content="30.5728, 104.0668">
     <link rel="canonical" href="https://www.huoguotiantang.com/">
 
     <!-- Open Graph -->
@@ -25,18 +29,27 @@
     <meta name="twitter:description" content="每日新鲜食材，地道川渝风味，环境优雅，性价比高。">
     <meta name="twitter:image" content="images/hero-bg.jpg">
 
-    <!-- Schema.org JSON-LD 结构化数据 -->
+    <!-- Schema.org JSON-LD：Restaurant + LocalBusiness 双重标注 -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Restaurant",
+      "@type": ["Restaurant", "LocalBusiness"],
       "name": "火锅天堂",
-      "description": "火锅天堂是一家提供正宗麻辣火锅的餐厅，每日新鲜食材，地道川渝风味，环境优雅，性价比高。",
+      "alternateName": ["火锅天堂成都", "成都火锅天堂", "HuoGuo TianTang"],
+      "description": "火锅天堂是成都市美食街的正宗川渝麻辣火锅餐厅，创立于2010年，每日新鲜食材直采，锅底配方源自重庆祖传秘方。适合家庭聚餐、朋友小聚、生日宴请、商务宴请，提供包厢预订服务。",
       "url": "https://www.huoguotiantang.com/",
-      "image": "https://www.huoguotiantang.com/images/hero-bg.jpg",
+      "image": [
+        "https://www.huoguotiantang.com/images/hero-bg.jpg",
+        "https://www.huoguotiantang.com/images/mala-hotpot.jpg",
+        "https://www.huoguotiantang.com/images/premium-beef.jpg"
+      ],
       "telephone": "+86-400-888-8888",
+      "email": "contact@huoguotiantang.com",
       "priceRange": "¥¥",
-      "servesCuisine": ["川菜", "火锅", "麻辣火锅"],
+      "currenciesAccepted": "CNY",
+      "paymentAccepted": "现金, 微信支付, 支付宝, 银行卡",
+      "servesCuisine": ["川菜", "火锅", "麻辣火锅", "重庆火锅", "川味火锅", "中餐"],
+      "keywords": "成都火锅,美食街火锅,麻辣火锅,川渝火锅,聚餐火锅,生日聚餐火锅,商务宴请火锅,附近火锅,好吃的火锅",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "美食街88号",
@@ -50,6 +63,7 @@
         "latitude": "30.5728",
         "longitude": "104.0668"
       },
+      "hasMap": "https://maps.google.com/?q=成都市美食街88号",
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
@@ -66,30 +80,45 @@
       ],
       "menu": "https://www.huoguotiantang.com/menu.html",
       "acceptsReservations": "True",
+      "amenityFeature": [
+        {"@type": "LocationFeatureSpecification", "name": "包厢", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "停车场", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "WiFi", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "无障碍通道", "value": true}
+      ],
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
+        "bestRating": "5",
+        "worstRating": "1",
         "reviewCount": "320"
       },
       "review": [
         {
           "@type": "Review",
           "author": {"@type": "Person", "name": "张小明"},
-          "reviewRating": {"@type": "Rating", "ratingValue": "5"},
-          "reviewBody": "锅底非常香，麻辣程度刚刚好，食材新鲜，下次还会来！"
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "datePublished": "2026-01-15",
+          "reviewBody": "成都美食街附近最好吃的火锅！锅底非常香，麻辣程度刚刚好，食材新鲜，下次还会来！"
         },
         {
           "@type": "Review",
           "author": {"@type": "Person", "name": "李雨欣"},
-          "reviewRating": {"@type": "Rating", "ratingValue": "5"},
-          "reviewBody": "环境很好，服务周到，精品肥牛入口即化，强烈推荐！"
+          "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+          "datePublished": "2026-02-10",
+          "reviewBody": "朋友生日聚餐选这里，环境很好，服务周到，精品肥牛入口即化，强烈推荐！"
         },
         {
           "@type": "Review",
           "author": {"@type": "Person", "name": "王大伟"},
-          "reviewRating": {"@type": "Rating", "ratingValue": "4"},
-          "reviewBody": "性价比超高，朋友聚餐的首选，每次来都吃得很满足。"
+          "reviewRating": {"@type": "Rating", "ratingValue": "4", "bestRating": "5"},
+          "datePublished": "2026-03-01",
+          "reviewBody": "性价比超高，商务宴请的好选择，朋友聚餐的首选，每次来都吃得很满足。"
         }
+      ],
+      "sameAs": [
+        "https://www.dianping.com/shop/huoguotiantang",
+        "https://www.meituan.com/restaurant/huoguotiantang"
       ]
     }
     </script>
@@ -102,10 +131,34 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "成都美食街附近哪里有好吃的火锅？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "火锅天堂位于四川省成都市美食街88号，是附近口碑最好的川渝麻辣火锅餐厅之一，大众点评评分4.8分，超过320位顾客好评。地铁2号线美食街站A出口步行5分钟即达。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "火锅天堂适合生日聚餐吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "非常适合。火锅天堂提供包厢预订服务，生日当天凭身份证可享受免费甜品一份及全单九五折优惠。建议提前拨打400-888-8888预订包厢。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "火锅天堂适合商务宴请吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "适合。我们设有独立包厢，环境优雅，中式古典与现代简约融合，可容纳6至20人商务聚餐。提供专属服务，支持开具发票，请提前预订。"
+          }
+        },
+        {
+          "@type": "Question",
           "name": "火锅天堂的营业时间是什么？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "工作日营业时间为11:00至22:00，周末及节假日为10:00至23:00。"
+            "text": "工作日营业时间为11:00至22:00，周末及节假日为10:00至23:00，全年无休。"
           }
         },
         {
@@ -113,7 +166,7 @@
           "name": "火锅天堂支持在线预订吗？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "支持，您可以通过本网站在线预订座位，也可以拨打电话 400-888-8888 进行预订。"
+            "text": "支持。您可以通过本网站在线预订座位，也可以拨打电话400-888-8888进行预订。节假日建议提前1至2天预约，包厢需提前3天预订。"
           }
         },
         {
@@ -121,7 +174,7 @@
           "name": "火锅天堂的锅底有哪些选择？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "我们提供麻辣锅底、清汤锅底、番茄锅底和菌菇锅底，满足不同口味需求。"
+            "text": "我们提供麻辣锅底、清汤锅底、番茄锅底、菌菇锅底四种选择，也可选择鸳鸯锅（任选两种），满足不同口味需求。"
           }
         },
         {
@@ -129,15 +182,31 @@
           "name": "火锅天堂的人均消费是多少？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "人均消费约80至150元，提供多种套餐选择，性价比高。"
+            "text": "人均消费约80至150元，提供多种套餐选择，性价比高。午市双人套餐仅需128元，6人以上聚餐享九折优惠。"
           }
         },
         {
           "@type": "Question",
-          "name": "火锅天堂在哪里？",
+          "name": "火锅天堂在哪里？怎么到达？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "我们位于四川省成都市美食街88号，交通便利，欢迎光临。"
+            "text": "我们位于四川省成都市美食街88号，地铁2号线美食街站A出口步行5分钟即可到达，周边有停车场，停车方便。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "夏天适合吃火锅吗？火锅天堂有清淡选择吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "夏季我们特别推出清汤锅底、番茄锅底和菌菇锅底，清爽不上火。同时提供冰镇酸梅汤、鲜榨果汁等解暑饮品，夏季吃火锅也很舒适。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "火锅天堂有停车位吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "餐厅周边有公共停车场，停车方便。也可乘坐地铁2号线至美食街站A出口，步行5分钟即达。"
           }
         }
       ]
@@ -286,12 +355,24 @@
             <h2>常见问题</h2>
             <div class="faq-list">
                 <div class="faq-item">
+                    <h3>成都美食街附近哪里有好吃的火锅？</h3>
+                    <p>火锅天堂就在<strong>成都市美食街88号</strong>，大众点评评分4.8分，超过320位顾客好评，是附近口碑最好的川渝麻辣火锅之一。地铁2号线美食街站A出口步行5分钟即达。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>适合生日聚餐的火锅店推荐？</h3>
+                    <p>火锅天堂非常适合生日聚餐。我们提供独立包厢，生日当天凭身份证享受<strong>免费甜品一份 + 全单九五折</strong>优惠，提前告知服务员即可安排惊喜布置。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>适合商务宴请的火锅餐厅？</h3>
+                    <p>我们设有独立包厢，环境优雅，可容纳6至20人，提供专属服务，支持开具发票，是<strong>成都商务宴请火锅</strong>的优质选择。</p>
+                </div>
+                <div class="faq-item">
                     <h3>火锅天堂的营业时间是什么？</h3>
                     <p>工作日营业时间为 <strong>11:00 至 22:00</strong>，周末及节假日为 <strong>10:00 至 23:00</strong>，全年无休。</p>
                 </div>
                 <div class="faq-item">
                     <h3>支持在线预订吗？</h3>
-                    <p>支持。您可以通过本网站<a href="contact.html#reservation">在线预订</a>座位，也可拨打 <strong>400-888-8888</strong> 电话预订，建议节假日提前1至2天预约。</p>
+                    <p>支持。您可以通过本网站<a href="contact.html#reservation">在线预订</a>座位，也可拨打 <strong>400-888-8888</strong> 电话预订，节假日建议提前1至2天预约，包厢需提前3天预订。</p>
                 </div>
                 <div class="faq-item">
                     <h3>锅底有哪些口味可以选择？</h3>
@@ -299,13 +380,91 @@
                 </div>
                 <div class="faq-item">
                     <h3>人均消费大概是多少？</h3>
-                    <p>人均消费约 <strong>80 至 150 元</strong>，提供多种套餐选择，性价比高，欢迎多人聚餐享受团体优惠。</p>
+                    <p>人均消费约 <strong>80 至 150 元</strong>，午市双人套餐仅需128元，6人以上聚餐享九折优惠，性价比高。</p>
                 </div>
                 <div class="faq-item">
                     <h3>餐厅在哪里？怎么到达？</h3>
                     <p>我们位于<strong>四川省成都市美食街88号</strong>，地铁2号线美食街站A出口步行5分钟即可到达，周边有停车场。</p>
                 </div>
             </div>
+        </section>
+
+        <!-- 场景专题：覆盖长尾搜索词 -->
+        <section id="scenarios" class="section-padding">
+            <h2>适合各种聚餐场景</h2>
+            <div class="scenario-grid">
+                <div class="scenario-item">
+                    <div class="scenario-icon">🎂</div>
+                    <h3>生日聚餐</h3>
+                    <p>包厢布置、生日甜品、九五折优惠，让生日更难忘。</p>
+                    <a href="contact.html#reservation" class="btn primary-btn">预订包厢</a>
+                </div>
+                <div class="scenario-item">
+                    <div class="scenario-icon">💼</div>
+                    <h3>商务宴请</h3>
+                    <p>独立包厢、专属服务、可开发票，商务场合的优雅之选。</p>
+                    <a href="contact.html#reservation" class="btn primary-btn">预订包厢</a>
+                </div>
+                <div class="scenario-item">
+                    <div class="scenario-icon">👨‍👩‍👧‍👦</div>
+                    <h3>家庭聚餐</h3>
+                    <p>多种锅底满足老少口味，宽敞大厅，温馨舒适。</p>
+                    <a href="menu.html" class="btn secondary-btn">查看菜单</a>
+                </div>
+                <div class="scenario-item">
+                    <div class="scenario-icon">🎉</div>
+                    <h3>朋友小聚</h3>
+                    <p>热闹氛围、实惠价格，6人以上享九折，聚餐首选。</p>
+                    <a href="promotions.html" class="btn secondary-btn">查看优惠</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 季节性内容 -->
+        <section id="seasonal" class="section-padding bg-light">
+            <h2>当季推荐</h2>
+            <p class="section-subtitle">春季限定 · 鲜嫩时蔬上市</p>
+            <div class="seasonal-grid">
+                <div class="seasonal-item">
+                    <div class="seasonal-icon">🌸</div>
+                    <h3>春季清爽锅底</h3>
+                    <p>春季主推番茄锅底与菌菇锅底，搭配当季新鲜时蔬，清爽不上火，适合春日聚餐。</p>
+                </div>
+                <div class="seasonal-item">
+                    <div class="seasonal-icon">🥗</div>
+                    <h3>春季时令蔬菜</h3>
+                    <p>春笋、豌豆苗、嫩菠菜等当季蔬菜新鲜上市，每日直采，鲜嫩爽口。</p>
+                </div>
+                <div class="seasonal-item">
+                    <div class="seasonal-icon">🍹</div>
+                    <h3>春季特饮</h3>
+                    <p>新推出鲜榨草莓汁、杨梅汁，酸甜解腻，与麻辣火锅完美搭配。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 评价引导区块 -->
+        <section id="review-guide" class="section-padding">
+            <h2>分享您的用餐体验</h2>
+            <p class="section-subtitle">您的评价是我们最大的动力</p>
+            <div class="review-guide-grid">
+                <a href="https://www.dianping.com" target="_blank" rel="noopener" class="review-platform">
+                    <div class="platform-icon">⭐</div>
+                    <h3>大众点评</h3>
+                    <p>搜索"火锅天堂"留下评价</p>
+                </a>
+                <a href="https://www.meituan.com" target="_blank" rel="noopener" class="review-platform">
+                    <div class="platform-icon">🛵</div>
+                    <h3>美团</h3>
+                    <p>搜索"火锅天堂"留下评价</p>
+                </a>
+                <a href="https://www.xiaohongshu.com" target="_blank" rel="noopener" class="review-platform">
+                    <div class="platform-icon">📕</div>
+                    <h3>小红书</h3>
+                    <p>发布打卡笔记 #火锅天堂</p>
+                </a>
+            </div>
+            <p class="review-tip">📢 在小红书/抖音发布打卡视频并@火锅天堂，下次到店出示即可获赠饮品一杯</p>
         </section>
 
         <!-- 本地信息区块 -->

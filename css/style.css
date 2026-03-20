@@ -831,3 +831,98 @@ footer a {
         grid-template-columns: 1fr;
     }
 }
+
+/* 场景专题 */
+#scenarios h2 { color: #A00000; }
+
+.scenario-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.scenario-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.scenario-item:hover { transform: translateY(-5px); }
+
+.scenario-icon { font-size: 2.8em; margin-bottom: 12px; }
+
+.scenario-item h3 { color: #A00000; font-size: 1.2em; margin-bottom: 10px; }
+
+.scenario-item p { color: #555; font-size: 0.9em; margin-bottom: 18px; }
+
+/* 季节性内容 */
+#seasonal h2 { color: #A00000; }
+
+.seasonal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.seasonal-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.seasonal-icon { font-size: 2.5em; margin-bottom: 12px; }
+
+.seasonal-item h3 { color: #A00000; font-size: 1.1em; margin-bottom: 10px; }
+
+.seasonal-item p { color: #555; font-size: 0.9em; }
+
+/* 评价引导 */
+#review-guide h2 { color: #A00000; }
+
+.review-guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    padding: 0 20px;
+}
+
+.review-platform {
+    display: block;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    color: inherit;
+}
+
+.review-platform:hover { transform: translateY(-4px); }
+
+.platform-icon { font-size: 2.5em; margin-bottom: 10px; }
+
+.review-platform h3 { color: #A00000; font-size: 1.1em; margin-bottom: 8px; }
+
+.review-platform p { color: #777; font-size: 0.85em; margin: 0; }
+
+.review-tip {
+    text-align: center;
+    color: #555;
+    font-size: 0.95em;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
