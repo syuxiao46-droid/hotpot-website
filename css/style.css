@@ -926,3 +926,242 @@ footer a {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+/* 品牌故事页 */
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.story-text p {
+    color: #555;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.story-milestones {
+    border-left: 3px solid #A00000;
+    padding-left: 25px;
+}
+
+.milestone {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.milestone::before {
+    content: '';
+    position: absolute;
+    left: -31px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    background-color: #A00000;
+    border-radius: 50%;
+}
+
+.milestone-year {
+    display: inline-block;
+    background-color: #A00000;
+    color: #FFD700;
+    padding: 2px 10px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 6px;
+}
+
+.milestone p {
+    color: #555;
+    font-size: 0.95em;
+    margin: 0;
+}
+
+/* 食材溯源 */
+.source-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.source-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.source-icon { font-size: 2.5em; margin-bottom: 12px; }
+
+.source-item h3 { color: #A00000; font-size: 1.1em; margin-bottom: 10px; }
+
+.source-item p { color: #555; font-size: 0.9em; }
+
+/* 团队 */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.team-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.team-avatar {
+    font-size: 4em;
+    margin-bottom: 15px;
+    background-color: #f8f0f0;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.team-item h3 { color: #333; font-size: 1.3em; margin-bottom: 5px; }
+
+.team-role {
+    display: inline-block;
+    color: #A00000;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.team-item p { color: #555; font-size: 0.9em; }
+
+/* 荣誉 */
+.honor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.honor-item {
+    background-color: #fff;
+    border-left: 4px solid #FFD700;
+    padding: 15px 20px;
+    border-radius: 0 8px 8px 0;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* 联系页 */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.contact-detail {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+.contact-icon { font-size: 1.8em; flex-shrink: 0; }
+
+.contact-detail strong {
+    display: block;
+    color: #A00000;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.contact-detail p { color: #555; margin: 3px 0; }
+
+.phone-link {
+    color: #A00000;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* 预订表单 */
+.reservation-form {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 0.95em;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: 'Noto Serif SC', serif;
+    font-size: 0.95em;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #A00000;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border: none;
+}
+
+.form-success {
+    background-color: #f0fff0;
+    border: 1px solid #4CAF50;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+}
+
+.form-success p { color: #333; margin: 8px 0; }
+
+/* 响应式 */
+@media (max-width: 768px) {
+    .story-grid,
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .story-milestones {
+        margin-top: 10px;
+    }
+
+    .reservation-form {
+        padding: 25px 20px;
+    }
+}

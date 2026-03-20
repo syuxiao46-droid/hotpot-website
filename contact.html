@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 | 火锅天堂 - 在线预订·地址导航·联系电话</title>
+    <meta name="description" content="火锅天堂联系方式：电话400-888-8888，地址四川省成都市美食街88号。支持在线预订座位，地铁2号线美食街站A出口步行5分钟。">
+    <meta name="geo.region" content="CN-SC">
+    <meta name="geo.placename" content="成都市">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="promo-banner">
+            🎉 新客专享：首次到店消费立减 <strong>30元</strong>，出示本页面即可享受 &nbsp;|&nbsp;
+            <a href="promotions.html">查看更多优惠 →</a>
+        </div>
+        <nav aria-label="主导航">
+            <div class="logo">火锅天堂</div>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="menu.html">菜单</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+                <li><a href="promotions.html">优惠活动</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <h1>联系我们</h1>
+            <p>期待您的光临，随时为您服务</p>
+        </section>
+
+        <!-- 联系信息 -->
+        <section id="address" class="section-padding">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <h2 style="text-align:left;">门店信息</h2>
+                        <div class="contact-detail">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <strong>地址</strong>
+                                <p>四川省成都市美食街88号</p>
+                                <a href="https://maps.google.com/?q=成都市美食街88号" target="_blank" rel="noopener" class="btn primary-btn map-btn">Google 地图导航</a>
+                                <a href="https://uri.amap.com/marker?position=104.0668,30.5728&name=火锅天堂" target="_blank" rel="noopener" class="btn secondary-btn map-btn">高德地图导航</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <strong>联系电话</strong>
+                                <p><a href="tel:+864008888888" class="phone-link">400-888-8888</a></p>
+                                <a href="tel:+864008888888" class="btn primary-btn call-btn">📞 一键拨号</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-icon">🕐</span>
+                            <div>
+                                <strong>营业时间</strong>
+                                <p>周一至周五：11:00 - 22:00</p>
+                                <p>周六至周日：10:00 - 23:00</p>
+                                <p style="color:#A00000; font-size:0.9em;">全年无休，节假日正常营业</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-icon">🚇</span>
+                            <div>
+                                <strong>交通指引</strong>
+                                <p>地铁2号线 美食街站 A出口，步行约5分钟</p>
+                                <p>周边有公共停车场，停车方便</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-icon">💬</span>
+                            <div>
+                                <strong>微信公众号</strong>
+                                <p>搜索"火锅天堂官方"关注，获取优惠资讯</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 在线预订表单 -->
+                    <div id="reservation" class="reservation-form">
+                        <h2 style="text-align:left;">在线预订</h2>
+                        <p style="color:#777; margin-bottom:25px; font-size:0.95em;">填写预订信息，我们将在30分钟内电话确认。节假日建议提前1-2天预订。</p>
+                        <form id="booking-form" onsubmit="submitForm(event)">
+                            <div class="form-group">
+                                <label for="name">姓名 *</label>
+                                <input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">手机号码 *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="请输入手机号码" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">用餐日期 *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">用餐时间 *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">请选择时间</option>
+                                    <option>11:00</option>
+                                    <option>11:30</option>
+                                    <option>12:00</option>
+                                    <option>12:30</option>
+                                    <option>13:00</option>
+                                    <option>17:00</option>
+                                    <option>17:30</option>
+                                    <option>18:00</option>
+                                    <option>18:30</option>
+                                    <option>19:00</option>
+                                    <option>19:30</option>
+                                    <option>20:00</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">用餐人数 *</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">请选择人数</option>
+                                    <option>1-2人</option>
+                                    <option>3-4人</option>
+                                    <option>5-6人</option>
+                                    <option>7-10人</option>
+                                    <option>10人以上（需预订包厢）</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="notes">备注</label>
+                                <textarea id="notes" name="notes" placeholder="如有特殊需求（生日布置、包厢、过敏原等）请在此说明" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn submit-btn">提交预订</button>
+                        </form>
+                        <div id="form-success" class="form-success" style="display:none;">
+                            <p>✅ 预订信息已提交！我们将在30分钟内致电确认，请保持手机畅通。</p>
+                            <p style="color:#777; font-size:0.9em;">如需紧急联系，请拨打 <a href="tel:+864008888888">400-888-8888</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>火锅天堂</strong></p>
+            <p>地址：四川省成都市美食街88号 | 电话：<a href="tel:+864008888888">400-888-8888</a></p>
+            <p>营业时间：工作日 11:00-22:00 | 周末 10:00-23:00</p>
+            <p>&copy; 2026 火锅天堂. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <a href="#reservation" class="float-btn" aria-label="立即预订">🍲 立即预订</a>
+
+    <script>
+    function submitForm(e) {
+        e.preventDefault();
+        document.getElementById('booking-form').style.display = 'none';
+        document.getElementById('form-success').style.display = 'block';
+    }
+    // 设置日期最小值为今天
+    document.getElementById('date').min = new Date().toISOString().split('T')[0];
+    </script>
+</body>
+</html>
